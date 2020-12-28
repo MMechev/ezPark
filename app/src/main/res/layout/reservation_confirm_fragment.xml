@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Reservation confirmed!"
+        android:layout_below="@+id/reservation_confirm_toolbar"
+        android:textSize="30dp"
+        android:id="@+id/title_confirmed"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_confirmed"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="Username: "
+        android:textSize="20dp"
+        android:id="@+id/username"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_confirmed"
+        android:layout_toRightOf="@id/username"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:id="@+id/real_username"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="50dp"
+        android:text="City: "
+        android:layout_marginLeft="50dp"
+        android:textSize="20dp"
+        android:id="@+id/city"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:id="@+id/real_city"
+        android:layout_toRightOf="@+id/city"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Parking: "
+        android:layout_below="@+id/city"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/parking"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/parking"
+        android:layout_marginTop="50dp"
+        android:id="@+id/real_parking"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: "
+        android:textSize="20dp"
+        android:layout_below="@+id/parking"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/time"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/real_time"
+        android:layout_below="@+id/parking"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/time"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Date: "
+        android:layout_below="@+id/time"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/date"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/real_date"
+        android:layout_toRightOf="@+id/date"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/time"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/real_date"
+        android:id="@+id/QR_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Navigation"
+        android:textSize="20dp"
+        android:background="@color/teal_200"
+        android:layout_below="@+id/QR_code"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/navigation_button"
+        android:layout_marginBottom="50dp" />
+
+</RelativeLayout>
+</ScrollView>

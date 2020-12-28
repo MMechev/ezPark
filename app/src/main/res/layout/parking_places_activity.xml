@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/text_container"
+    android:background="@color/teal_700"
+    tools:context=".ParkingPlacesActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_parking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Parking Lots">
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:layout_gravity="right"
+            android:drawableLeft="@drawable/my_reservations"
+            android:text=""
+            android:id="@+id/reservations_button2"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/parking_list"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar_parking"
+        android:drawSelectorOnTop="true"/>
+
+</RelativeLayout>
